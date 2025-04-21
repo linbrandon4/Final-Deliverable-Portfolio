@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import theme from '~/src/theme';
@@ -15,7 +15,7 @@ import ExcelFiles from './pages/ExcelFiles';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Final-Deliverable-Portfolio">
       <ThemeProvider theme={theme}>
         <NavBar />
         <UIControls />
